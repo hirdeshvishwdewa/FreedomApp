@@ -1,0 +1,41 @@
+Investigation:
+
+1. Investigation is a file used to store all the infos like, 
+    1. No. of pages, no. of containers on a page etc.
+    2. Investigation configurations (global theme color etc)
+    3. Services info etc.
+
+Floor:
+
+1. On load get all the floor configurations of the investigation,
+2. Floor configuration containes the info about the number of pages
+3. Each page has multiple containes, so has multiple cotainer configurations
+
+Container:
+
+1. Draw a container with the dimentiones mentioned inside the container config,
+2. Set the container title etc info, set container overflow mentu configs 
+2. Container config also has view config pass it to the view,
+
+View:
+
+1. View has the information like view specific configurations like, 
+show labels in view, color of lables etc
+2. This config info will be used in setting up the view config panel,
+3. View config also know about the service info which is used to fetch data for view rendering,
+4. Write an algo to various states of view in the process to fetching data from the specific service,
+5. Load the mentioned graph inside the view, pass the data to graph
+6. Hold the data of the graph,
+
+Graph:
+
+1. Emmit data selection events
+2. Emmit Exclude/Include events
+3. Receive the dataUpdate events
+
+
+Data Services:
+
+1. These are the registered services with the app
+2. The list of services will be loaded when application loads for first time,
+
