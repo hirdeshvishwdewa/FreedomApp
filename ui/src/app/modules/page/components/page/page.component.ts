@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, Input, OnInit } from '@angular/core';
-import { IContainerConfig, IPageConfig } from 'src/app/modules/view/services/view.service';
+import { IContainerConfig, IPageConfig } from 'src/app/modules/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-page',

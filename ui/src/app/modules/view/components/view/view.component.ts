@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, Input, OnInit, ViewChild } from '@angular/core';
+import { IViewConfig } from 'src/app/modules/shared/interfaces/interfaces';
 import { ViewDirective } from '../../directives/view.directive';
-import { IViewConfig, ViewService } from '../../services/view.service';
+import { ViewService } from '../../services/view.service';
 
 @Component({
   selector: 'app-view',

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnChanges, OnInit } from '@angular/core';
-import { IFloorConfig, IPageConfig } from 'src/app/modules/view/services/view.service';
 import 'gridstack/dist/h5/gridstack-dd-native';
 import { GridItemHTMLElement, GridStack, GridStackNode } from 'gridstack';
+import { IFloorConfig, IPageConfig } from 'src/app/modules/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-floor',
@@ -11,7 +11,7 @@ import { GridItemHTMLElement, GridStack, GridStackNode } from 'gridstack';
 export class FloorComponent implements OnInit, AfterViewInit, OnChanges {
   floorConfig: IFloorConfig | undefined;
   grid: GridStack | undefined;
-  pages: IPageConfig[];
+  pageConfigs: IPageConfig[];
   constructor() {
     this.floorConfig = {
       pages: [
@@ -69,7 +69,7 @@ export class FloorComponent implements OnInit, AfterViewInit, OnChanges {
         },
       ]
     };
-    this.pages = this.floorConfig.pages;
+    this.pageConfigs = this.floorConfig.pages;
   }
 
   ngOnInit(): void {
@@ -89,7 +89,11 @@ export class FloorComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   onContainerReSize(evt: Event, item: GridItemHTMLElement | GridStackNode | GridStackNode[] | undefined): void {
+    console.log('FloorComponent | onContainerReSize');
+  }
 
+  onContainerAdd(evt: Event, item: GridItemHTMLElement | GridStackNode | GridStackNode[] | undefined): void {
+    console.log('FloorComponent | onContainerAdd');
   }
 
   initGrid(gridClass: string = 'grid-stack'): void {

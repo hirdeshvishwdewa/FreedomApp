@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GridStack } from 'gridstack';
-import { IContainerConfig } from 'src/app/modules/view/services/view.service';
+import { IContainerConfig } from 'src/app/modules/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-container',

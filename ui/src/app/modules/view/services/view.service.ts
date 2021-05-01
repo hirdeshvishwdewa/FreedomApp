@@ -1,4 +1,5 @@
 import { Injectable, Type } from '@angular/core';
+import { IViewConfig } from '../../shared/interfaces/interfaces';
 import { GridComponent } from '../views/grid/grid.component';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class ViewService {
     ];
   }
 
-  getViews() {
+  getViews(): ViewType[] | undefined {
     return this.viewInstancesList;
   }
 
@@ -31,27 +32,4 @@ export class ViewService {
 
 export class ViewType {
   constructor(public component: Type<any>, public config: IViewConfig) { }
-}
-
-export interface IViewStaticProperties {
-  type?: string;
-}
-export interface IViewConfig {
-  name: string;
-  properties?: IViewStaticProperties;
-}
-
-export interface IContainerConfig {
-  viewPort?: any;
-  viewConfig?: IViewConfig;
-}
-
-export interface IPageConfig {
-  id: string;
-  title?: string;
-  containers: IContainerConfig[];
-}
-
-export interface IFloorConfig {
-  pages: IPageConfig[]
 }
