@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aliceblue;
+    height: 5vh;
+}
+
+footer {
+    background-color: aliceblue;
+    height: 4vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.p-tabview {
+    .p-tabview-panels {
+        padding: 0 !important;
+        height: 88vh;
+
+        .p-tabview-panel {
+            height: 88vh;
+        }
+    }
+
+    .p-tabview-nav {
+        position: fixed;
+        bottom: 4vh;
+        height: 3vh;
+        border: none;
+
+        .p-tabview-nav-link {
+            padding: 1px 1vw !important;
+        }
+
+        li {
+            .p-tabview-nav-link:not(.p-disabled):focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+.grid-stack {
+    height: 88vh !important;
+}

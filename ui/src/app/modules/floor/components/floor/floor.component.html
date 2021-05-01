@@ -1,0 +1,6 @@
+<p-tabView id="closableTabView" (onChange)="onPageChange($event)">
+    <p-tabPanel [header]="page.title ? page.title : ''"
+        *ngFor="let page of pages; let i = index" [selected]="i == 0" [closable]="i != 0">
+        <app-page [page]="page"></app-page>
+    </p-tabPanel>
+</p-tabView>
