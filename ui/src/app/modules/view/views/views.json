@@ -1,0 +1,18 @@
+[
+    {
+        "id": "grid",
+        "name": "Grid View",
+        "dataSourceType": "tabular",
+        "recordLimit": 5000,
+        "dataPanelConfiguration": {
+            "dataFields": [
+                {
+                    "name": "Columns"
+                }
+            ]
+        },
+        "viewConfiguration": {
+            
+        }
+    }
+]
