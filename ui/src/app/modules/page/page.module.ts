@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageComponent } from './components/page/page.component';
 import { ContainerModule } from '../container/container.module';
+import { PageService } from './page.service';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,9 @@ import { ContainerModule } from '../container/container.module';
   ],
   exports: [
     PageComponent
+  ],
+  providers: [
+    PageService
   ]
 })
 export class PageModule { }

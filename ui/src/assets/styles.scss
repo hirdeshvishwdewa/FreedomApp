@@ -6,12 +6,12 @@
 
 header {
     background-color: aliceblue;
-    height: 5vh;
+    height: 34.5px;
 }
 
 footer {
     background-color: aliceblue;
-    height: 4vh;
+    height: 25px;
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -20,7 +20,7 @@ footer {
 .p-tabview {
     .p-tabview-panels {
         padding: 0 !important;
-        height: 88vh;
+        height: calc(100vh - 80px);
 
         .p-tabview-panel {
             height: 88vh;
@@ -29,9 +29,9 @@ footer {
 
     .p-tabview-nav {
         position: fixed;
-        bottom: 4vh;
-        height: 3vh;
-        border: none;
+        bottom: 26px;
+        height: 20px;
+        border: none !important;
 
         .p-tabview-nav-link {
             padding: 1px 1vw !important;

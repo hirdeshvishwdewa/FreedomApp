@@ -19,6 +19,9 @@ export class ViewComponent implements OnInit {
     this.loadComponent();
   }
 
+  /**
+   * This component is used to load a view
+   */
   loadComponent = (): void => {
     if (this.viewConfig && this.viewConfig.name) {
       const view = this.viewService.getViewByName(this.viewConfig.name);

@@ -34,7 +34,8 @@ export class ViewType {
 }
 
 export interface IViewStaticProperties {
-  type?: string;
+  type: string;
+  
 }
 export interface IViewConfig {
   name: string;

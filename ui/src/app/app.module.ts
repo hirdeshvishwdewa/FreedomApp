@@ -12,7 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { FloorModule } from './modules/floor/floor.module';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +27,7 @@ import { FloorModule } from './modules/floor/floor.module';
     BrowserAnimationsModule,
     GridstackModule.forRoot(),
     FloorModule,
+    HttpClientModule
   ],
   providers: [
   ],
